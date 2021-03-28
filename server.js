@@ -19,8 +19,10 @@ const app = express()
 //middle ware
 app.use(bodyParser.json());
 app.use(cors());
-
-
+// root app
+      app.get('/', (req, res) => {
+         res.send("Ema-John Server Root")
+    })
 
 // app.get('/', (req, res) => {
 //     res.send('hello world');
